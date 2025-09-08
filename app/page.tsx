@@ -213,16 +213,18 @@ export default function TeluguNightLanding() {
                 </div>
 
                 {/* Title Content */}
-                <div className="relative z-10 h-full flex flex-col items-center justify-center p-8 sm:p-10 md:p-12 lg:p-16 xl:p-20 text-slate-500">
-                  <h1
-                    className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold mb-2 sm:mb-3 md:mb-4 lg:mb-6 text-white tracking-tighter font-[family-name:var(--font-poppins)] leading-[0.9] text-center uppercase flex-col items-end"
-                    style={{
-                      textShadow:
-                        "0 0 20px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 0, 0, 0.6), 0 4px 8px rgba(0, 0, 0, 0.9)",
-                    }}
-                  >
-                    [TELUGU NIGHT]²
-                  </h1>
+                <div className="relative z-10 h-full flex flex-col items-center justify-center p-8 sm:p-10 md:p-12 lg:p-16 xl:p-20">
+                  <div className="mb-4 sm:mb-6 md:mb-8 lg:mb-10">
+                    <img
+                      src="/telugu-night-logo.png"
+                      alt="Telugu Night²"
+                      className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl my-0 mx-0 py-0 justify-end"
+                      style={{
+                        filter:
+                          "drop-shadow(0 0 20px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 40px rgba(0, 0, 0, 0.6)) drop-shadow(0 4px 8px rgba(0, 0, 0, 0.9))",
+                      }}
+                    />
+                  </div>
                   <div className="w-8 sm:w-12 md:w-16 h-0.5 bg-white/90 mx-auto mb-2 sm:mb-3 md:mb-4"></div>
                   <p
                     className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white/95 font-bold tracking-tight text-center px-2 font-[family-name:var(--font-poppins)]"
