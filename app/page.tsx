@@ -34,7 +34,7 @@ export default function TeluguNightLanding() {
   const { scrollY, blurAmount } = useScrollBlur()
 
   // Memoized target date to prevent recalculation
-  const targetDate = useMemo(() => new Date("2025-09-18T19:00:00").getTime(), [])
+  const targetDate = useMemo(() => new Date("2025-09-19T19:00:00").getTime(), [])
 
   // Optimized countdown timer with useCallback
   const updateCountdown = useCallback(() => {
@@ -214,7 +214,7 @@ export default function TeluguNightLanding() {
 
                 {/* Title Content */}
                 <div className="relative z-10 h-full flex flex-col items-center justify-center p-8 sm:p-10 md:p-12 lg:p-16 xl:p-20">
-                  <div className="mb-4 sm:mb-6 md:mb-8 lg:mb-10">
+                  <div className="mb-4 sm:mb-6 md:mb-8 lg:mb-10 mt-16 sm:mt-20 md:mt-24 lg:mt-32">
                     <img
                       src="/telugu-night-logo.png"
                       alt="Telugu Night²"
@@ -230,7 +230,7 @@ export default function TeluguNightLanding() {
                     className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white/95 font-bold tracking-tight text-center px-2 font-[family-name:var(--font-poppins)]"
                     style={{ textShadow: "0 0 15px rgba(0, 0, 0, 0.7), 0 2px 4px rgba(0, 0, 0, 0.8)" }}
                   >
-                    September 18th • DTR, Manipal
+                    September 19th • DTR, Manipal
                   </p>
                 </div>
               </div>
@@ -254,7 +254,7 @@ export default function TeluguNightLanding() {
                     Date
                   </h3>
                   <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white font-bold font-[family-name:var(--font-poppins)]">
-                    18th September 2025
+                    19th September 2025
                   </p>
                 </div>
               </AnimatedSection>
