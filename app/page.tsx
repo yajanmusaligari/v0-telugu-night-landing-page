@@ -34,7 +34,7 @@ export default function TeluguNightLanding() {
   const { scrollY, blurAmount } = useScrollBlur()
 
   // Memoized target date to prevent recalculation
-  const targetDate = useMemo(() => new Date("2025-01-25T19:00:00").getTime(), [])
+  const targetDate = useMemo(() => new Date("2026-01-25T19:00:00").getTime(), [])
 
   // Optimized countdown timer with useCallback
   const updateCountdown = useCallback(() => {
@@ -254,7 +254,7 @@ export default function TeluguNightLanding() {
                     Date
                   </h3>
                   <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white font-bold font-[family-name:var(--font-poppins)]">
-                    25th January 2025
+                    25th January 2026
                   </p>
                 </div>
               </AnimatedSection>
