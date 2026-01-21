@@ -2,7 +2,7 @@
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
-
+ 
 :root {
   --background: hsl(0 0% 100%);
   --foreground: hsl(0 0% 3.9%);
@@ -28,15 +28,15 @@
   --chart-3: hsl(197 37% 24%);
   --chart-4: hsl(43 74% 66%);
   --chart-5: hsl(27 87% 67%);
-  --radius: 0.5rem;
-  --sidebar: oklch(0.985 0 0); /* New from diff */
-  --sidebar-foreground: oklch(0.145 0 0); /* New from diff */
-  --sidebar-primary: oklch(0.205 0 0); /* New from diff */
-  --sidebar-primary-foreground: oklch(0.985 0 0); /* New from diff */
-  --sidebar-accent: oklch(0.97 0 0); /* New from diff */
-  --sidebar-accent-foreground: oklch(0.205 0 0); /* New from diff */
-  --sidebar-border: oklch(0.922 0 0); /* New from diff */
-  --sidebar-ring: oklch(0.708 0 0); /* New from diff */
+  --radius: 0.5rem; /* Preserved from existing */
+  --sidebar: oklch(0.985 0 0); /* New from default */
+  --sidebar-foreground: oklch(0.145 0 0); /* New from default */
+  --sidebar-primary: oklch(0.205 0 0); /* New from default */
+  --sidebar-primary-foreground: oklch(0.985 0 0); /* New from default */
+  --sidebar-accent: oklch(0.97 0 0); /* New from default */
+  --sidebar-accent-foreground: oklch(0.205 0 0); /* New from default */
+  --sidebar-border: oklch(0.922 0 0); /* New from default */
+  --sidebar-ring: oklch(0.708 0 0); /* New from default */
 }
 
 .dark {
@@ -64,17 +64,18 @@
   --chart-3: hsl(30 80% 55%);
   --chart-4: hsl(280 65% 60%);
   --chart-5: hsl(340 75% 55%);
-  --sidebar: oklch(0.205 0 0); /* New from diff */
-  --sidebar-foreground: oklch(0.985 0 0); /* New from diff */
-  --sidebar-primary: oklch(0.488 0.243 264.376); /* New from diff */
-  --sidebar-primary-foreground: oklch(0.985 0 0); /* New from diff */
-  --sidebar-accent: oklch(0.269 0 0); /* New from diff */
-  --sidebar-accent-foreground: oklch(0.985 0 0); /* New from diff */
-  --sidebar-border: oklch(0.269 0 0); /* New from diff */
-  --sidebar-ring: oklch(0.439 0 0); /* New from diff */
+  --sidebar: oklch(0.205 0 0); /* New from default */
+  --sidebar-foreground: oklch(0.985 0 0); /* New from default */
+  --sidebar-primary: oklch(0.488 0.243 264.376); /* New from default */
+  --sidebar-primary-foreground: oklch(0.985 0 0); /* New from default */
+  --sidebar-accent: oklch(0.269 0 0); /* New from default */
+  --sidebar-accent-foreground: oklch(0.985 0 0); /* New from default */
+  --sidebar-border: oklch(0.269 0 0); /* New from default */
+  --sidebar-ring: oklch(0.439 0 0); /* New from default */
 }
 
-@theme {
+@theme inline {
+  /* optional: --font-sans, --font-serif, --font-mono if they are applied in the layout.tsx */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -99,19 +100,19 @@
   --color-chart-3: var(--chart-3);
   --color-chart-4: var(--chart-4);
   --color-chart-5: var(--chart-5);
-  --radius-base: var(--radius); /* Kept from existing */
-  --radius-lg: var(--radius);
-  --radius-md: calc(var(--radius) - 2px);
+  --radius-base: var(--radius); /* Added for consistency with existing */
   --radius-sm: calc(var(--radius) - 4px);
-  --radius-xl: calc(var(--radius) + 4px); /* New from diff */
-  --color-sidebar: var(--sidebar); /* New from diff */
-  --color-sidebar-foreground: var(--sidebar-foreground); /* New from diff */
-  --color-sidebar-primary: var(--sidebar-primary); /* New from diff */
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground); /* New from diff */
-  --color-sidebar-accent: var(--sidebar-accent); /* New from diff */
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground); /* New from diff */
-  --color-sidebar-border: var(--sidebar-border); /* New from diff */
-  --color-sidebar-ring: var(--sidebar-ring); /* New from diff */
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px); /* New from default */
+  --color-sidebar: var(--sidebar); /* New from default */
+  --color-sidebar-foreground: var(--sidebar-foreground); /* New from default */
+  --color-sidebar-primary: var(--sidebar-primary); /* New from default */
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground); /* New from default */
+  --color-sidebar-accent: var(--sidebar-accent); /* New from default */
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground); /* New from default */
+  --color-sidebar-border: var(--sidebar-border); /* New from default */
+  --color-sidebar-ring: var(--sidebar-ring); /* New from default */
 }
 
 @keyframes gradient-shift {
@@ -128,81 +129,24 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50; /* Modified: added outline-ring/50 */
+    @apply border-border outline-ring/50; /* Updated: added outline */
   }
 
   body {
     @apply bg-background text-foreground;
-    font-feature-settings: "rlig" 1, "calt" 1; /* Preserved */
-    text-rendering: optimizeLegibility; /* Preserved */
-    -webkit-font-smoothing: antialiased; /* Preserved */
-    -moz-osx-font-smoothing: grayscale; /* Preserved */
+    font-feature-settings: "rlig" 1, "calt" 1; /* Preserved from existing */
+    text-rendering: optimizeLegibility; /* Preserved from existing */
+    -webkit-font-smoothing: antialiased; /* Preserved from existing */
+    -moz-osx-font-smoothing: grayscale; /* Preserved from existing */
   }
 
-  /* Optimize scrolling performance */
   html {
     scroll-behavior: smooth;
   }
 
-  /* Force hardware acceleration for better performance */
-  * {
-    transform: translateZ(0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-  }
-
-  /* Improve touch targets for mobile */
-  @media (hover: none) and (pointer: coarse) {
-    button,
-    a {
-      min-height: 44px;
-      min-width: 44px;
-    }
-  }
-
-  /* Focus styles for accessibility (relocated from below) */
   button:focus-visible,
   a:focus-visible {
-    @apply outline-2 outline-offset-2 outline-white/50;
-  }
-
-  /* Ultra-smooth performance optimizations (relocated from below) */
-  /* Optimize video rendering */
-  video {
-    transform: translateZ(0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-  }
-
-  /* Optimize backdrop blur for performance */
-  .backdrop-blur-sm {
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
-  }
-
-  .backdrop-blur-md {
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-  }
-
-  /* Optimize shadows for performance */
-  .shadow-xl {
-    box-shadow: 0 10px 25px -3px rgb(0 0 0 / 0.1), 0 4px 6px -2px rgb(0 0 0 / 0.05);
-  }
-
-  .shadow-2xl {
-    box-shadow: 0 15px 30px -5px rgb(0 0 0 / 0.15), 0 8px 10px -3px rgb(0 0 0 / 0.1);
-  }
-
-  /* Optimize transitions */
-  .transition-colors {
-    transition-property: color, background-color, border-color;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  /* Remove unnecessary transforms on static elements */
-  .static-element {
-    transform: none !important;
+    @apply outline-2 outline-offset-2 outline-ring;
   }
 }
 
@@ -211,19 +155,8 @@
     text-wrap: balance;
   }
 
-  .bg-gradient-radial { /* New from diff */
-    background: radial-gradient(var(--tw-gradient-stops));
-  }
-
   .touch-manipulation {
     touch-action: manipulation;
-  }
-
-  .select-none { /* New from diff */
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
   }
 }
 
