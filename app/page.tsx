@@ -57,7 +57,6 @@ export default function TeluguNightLanding() {
     return () => clearInterval(timer)
   }, [updateCountdown])
 
-  // Auto-play audio on component mount
   useEffect(() => {
     const playAudio = async () => {
       if (audioRef.current) {
@@ -72,8 +71,24 @@ export default function TeluguNightLanding() {
       }
     }
 
-    playAudio() // Remove setTimeout, play immediately
-  }, [])
+    // Play audio immediately on mount
+    playAudio()
+
+    // Also add touch listener to resume playback if blocked
+    const handleTouchStart = async () => {
+      if (audioRef.current && !isAudioPlaying) {
+        try {
+          await audioRef.current.play()
+          setIsAudioPlaying(true)
+        } catch (error) {
+          console.log("Audio play on touch failed:", error)
+        }
+      }
+    }
+
+    document.addEventListener("touchstart", handleTouchStart, { once: true })
+    return () => document.removeEventListener("touchstart", handleTouchStart)
+  }, [isAudioPlaying])
 
   const togglePlayPause = useCallback(async () => {
     try {
@@ -210,7 +225,7 @@ export default function TeluguNightLanding() {
                 <div className="relative z-10 h-full flex flex-col items-center justify-center p-8 sm:p-10 md:p-12 lg:p-16 xl:p-20">
                   <div className="mb-4 sm:mb-6 md:mb-8 lg:mb-10 mt-16 sm:mt-20 md:mt-24 lg:mt-32">
                     <img
-                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/tn3-6SThVDEbr3baujCY6kqnoItbfBptWL.png"
+                      src="/images/tn3.png"
                       alt="Telugu Night²"
                       className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl my-0 mx-0 py-0 justify-end"
                       style={{
@@ -226,6 +241,16 @@ export default function TeluguNightLanding() {
                   >
                     25th January • Hi-Point Lounge (Formerly Soho)
                   </p>
+                  <a
+                    href="https://telugunight.manipal.app/book"
+                    className="inline-block mt-4 sm:mt-5 md:mt-6 px-6 sm:px-8 md:px-10 py-2.5 sm:py-3 md:py-4 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 text-white font-bold text-xs sm:text-sm md:text-base rounded-full sm:rounded-lg transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-lg hover:shadow-2xl touch-manipulation font-[family-name:var(--font-poppins)] animate-pulse"
+                    style={{
+                      backgroundSize: "200% 200%",
+                      animation: "gradient-shift 3s ease infinite",
+                    }}
+                  >
+                    Reserve Your Spot ✨
+                  </a>
                 </div>
               </div>
             </div>
@@ -296,12 +321,12 @@ export default function TeluguNightLanding() {
 
             {/* CTA Button */}
             <AnimatedSection animation="fadeUp" className="mb-6 sm:mb-8 md:mb-12 lg:mb-16">
-              <Button
-                size="lg"
-                className="bg-white text-black hover:bg-white/95 active:bg-white/90 font-bold text-sm sm:text-base md:text-lg px-6 sm:px-8 md:px-12 py-3 sm:py-4 md:py-6 rounded-lg sm:rounded-xl transition-colors duration-150 tracking-tight font-[family-name:var(--font-poppins)] shadow-2xl border-0 w-full sm:w-auto max-w-xs sm:max-w-sm mx-auto touch-manipulation"
+              <a
+                href="https://telugunight.manipal.app/book"
+                className="inline-block bg-white text-black hover:bg-white/95 active:bg-white/90 font-bold text-sm sm:text-base md:text-lg px-6 sm:px-8 md:px-12 py-3 sm:py-4 md:py-6 rounded-lg sm:rounded-xl transition-all duration-150 tracking-tight font-[family-name:var(--font-poppins)] shadow-2xl border-0 max-w-xs sm:max-w-sm touch-manipulation hover:scale-105 active:scale-95"
               >
                 Reserve Your Spot
-              </Button>
+              </a>
             </AnimatedSection>
 
             {/* Countdown Timer */}
@@ -419,9 +444,12 @@ export default function TeluguNightLanding() {
 
                   <Button
                     size="lg"
-                    className="bg-white text-black hover:bg-white/95 active:bg-white/90 font-bold text-base sm:text-lg md:text-xl px-8 sm:px-12 md:px-16 py-4 sm:py-6 md:py-8 rounded-lg sm:rounded-xl transition-colors duration-150 tracking-tight font-[family-name:var(--font-poppins)] shadow-2xl touch-manipulation w-full sm:w-auto max-w-sm mx-auto"
+                    asChild
+                    className="bg-white text-black hover:bg-white/95 active:bg-white/90 font-bold text-base sm:text-lg md:text-xl px-8 sm:px-12 md:px-16 py-4 sm:py-6 md:py-8 rounded-lg sm:rounded-xl transition-all duration-150 tracking-tight font-[family-name:var(--font-poppins)] shadow-2xl touch-manipulation w-full sm:w-auto max-w-sm mx-auto hover:scale-105 active:scale-95"
                   >
-                    Reserve Your Spot
+                    <a href="https://telugunight.manipal.app/book">
+                      Reserve Your Spot
+                    </a>
                   </Button>
                 </div>
               </div>
