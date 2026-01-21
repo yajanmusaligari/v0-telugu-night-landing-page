@@ -34,7 +34,7 @@ export default function TeluguNightLanding() {
   const { scrollY, blurAmount } = useScrollBlur()
 
   // Memoized target date to prevent recalculation
-  const targetDate = useMemo(() => new Date("2025-09-19T19:00:00").getTime(), [])
+  const targetDate = useMemo(() => new Date("2025-01-25T19:00:00").getTime(), [])
 
   // Optimized countdown timer with useCallback
   const updateCountdown = useCallback(() => {
@@ -136,7 +136,7 @@ export default function TeluguNightLanding() {
         }}
       >
         <source
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tillu%20Anna%20DJ%20Pedithe-FZHv0SsiwYOSmo4W66x37IgMP73mPJ.mp3"
+          src="/images/tillu-20anna-20dj-20pedithe.mp3"
           type="audio/mpeg"
         />
         Your browser does not support the audio element.
@@ -207,7 +207,7 @@ export default function TeluguNightLanding() {
                     onPause={() => setIsVideoPlaying(false)}
                     onEnded={() => setIsVideoPlaying(false)}
                   >
-                    <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Video%202025-09-08%20at%2016.34.59_b9b85147-w2EeUwygSRRRH6zMCteexrwdGzEYOR.mp4" type="video/mp4" />
+                    <source src="/images/whatsapp-20video-202025-09-08-20at-2016.mp4" type="video/mp4" />
                   </video>
                   <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40"></div>
                 </div>
@@ -230,7 +230,7 @@ export default function TeluguNightLanding() {
                     className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white/95 font-bold tracking-tight text-center px-2 font-[family-name:var(--font-poppins)]"
                     style={{ textShadow: "0 0 15px rgba(0, 0, 0, 0.7), 0 2px 4px rgba(0, 0, 0, 0.8)" }}
                   >
-                    September 19th • DTR, Manipal
+                    25th January • Hi-Point Lounge (Formerly Soho)
                   </p>
                 </div>
               </div>
@@ -254,7 +254,7 @@ export default function TeluguNightLanding() {
                     Date
                   </h3>
                   <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white font-bold font-[family-name:var(--font-poppins)]">
-                    19th September 2025
+                    25th January 2025
                   </p>
                 </div>
               </AnimatedSection>
@@ -278,7 +278,7 @@ export default function TeluguNightLanding() {
                     Venue
                   </h3>
                   <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white font-bold font-[family-name:var(--font-poppins)]">
-                    DTR, Manipal
+                    Hi-Point Lounge (Formerly Soho)
                   </p>
                 </div>
               </AnimatedSection>
