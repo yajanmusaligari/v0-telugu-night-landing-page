@@ -210,7 +210,7 @@ export default function TeluguNightLanding() {
                 <div className="relative z-10 h-full flex flex-col items-center justify-center p-8 sm:p-10 md:p-12 lg:p-16 xl:p-20">
                   <div className="mb-4 sm:mb-6 md:mb-8 lg:mb-10 mt-16 sm:mt-20 md:mt-24 lg:mt-32">
                     <img
-                      src="/telugu-night-logo.png"
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/tn3-6SThVDEbr3baujCY6kqnoItbfBptWL.png"
                       alt="Telugu Night²"
                       className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl my-0 mx-0 py-0 justify-end"
                       style={{
