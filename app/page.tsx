@@ -116,7 +116,7 @@ export default function TeluguNightLanding() {
 
   return (
     <div className="min-h-screen bg-black text-white font-sans relative overflow-x-hidden">
-      {/* Background Audio */}
+      {/* Background Audio - disabled until audio file is available */}
       <audio
         ref={audioRef}
         loop
@@ -124,29 +124,15 @@ export default function TeluguNightLanding() {
         onPlay={() => setIsAudioPlaying(true)}
         onPause={() => setIsAudioPlaying(false)}
         onEnded={() => setIsAudioPlaying(false)}
-        onError={(e) => {
-          const errorCode = e.currentTarget?.error?.code
-          const errorMessages: Record<number, string> = {
-            1: "MEDIA_ERR_ABORTED",
-            2: "MEDIA_ERR_NETWORK",
-            3: "MEDIA_ERR_DECODE",
-            4: "MEDIA_ERR_SRC_NOT_SUPPORTED",
-          }
-          const errorMessage = errorMessages[errorCode || 0] || "Unknown audio error"
-          console.error("[v0] Audio error:", errorMessage)
+        onError={() => {
           setIsAudioPlaying(false)
         }}
         onLoadedData={() => {
-          console.log("[v0] Audio loaded successfully")
           if (audioRef.current) {
             audioRef.current.volume = 0.7
           }
         }}
       >
-        <source
-          src="/Tillu%20Anna%20DJ%20Pedithe-FZHv0SsiwYOSmo4W66x37IgMP73mPJ.mp3"
-          type="audio/mpeg"
-        />
         Your browser does not support the audio element.
       </audio>
 
