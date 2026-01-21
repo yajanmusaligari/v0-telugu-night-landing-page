@@ -144,7 +144,7 @@ export default function TeluguNightLanding() {
         }}
       >
         <source
-          src="Tillu%20Anna%20DJ%20Pedithe-FZHv0SsiwYOSmo4W66x37IgMP73mPJ.mp3"
+          src="/Tillu%20Anna%20DJ%20Pedithe-FZHv0SsiwYOSmo4W66x37IgMP73mPJ.mp3"
           type="audio/mpeg"
         />
         Your browser does not support the audio element.
