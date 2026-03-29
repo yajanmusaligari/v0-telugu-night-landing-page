@@ -34,7 +34,7 @@ export default function TeluguNightLanding() {
   const { scrollY, blurAmount } = useScrollBlur()
 
   // Memoized target date to prevent recalculation
-  const targetDate = useMemo(() => new Date("2026-01-25T19:00:00").getTime(), [])
+  const targetDate = useMemo(() => new Date("2026-04-05T19:00:00").getTime(), [])
 
   // Optimized countdown timer with useCallback
   const updateCountdown = useCallback(() => {
@@ -225,8 +225,8 @@ export default function TeluguNightLanding() {
                 <div className="relative z-10 h-full flex flex-col items-center justify-center p-8 sm:p-10 md:p-12 lg:p-16 xl:p-20">
                   <div className="mb-4 sm:mb-6 md:mb-8 lg:mb-10 mt-16 sm:mt-20 md:mt-24 lg:mt-32">
                     <img
-                      src="/images/tn3.png"
-                      alt="Telugu Night²"
+                      src="/images/thaggedhe-le-logo.png"
+                      alt="Thaggedhe Le - The Epic Telugu Night is Back!!"
                       className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl my-0 mx-0 py-0 justify-end"
                       style={{
                         filter:
@@ -436,7 +436,7 @@ export default function TeluguNightLanding() {
                   <div className="bg-zinc-800/60 backdrop-blur-sm border border-zinc-700/80 rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 max-w-sm sm:max-w-md mx-auto">
                     <div className="flex items-center justify-center mb-2 sm:mb-3 md:mb-4">
                       <IndianRupee className="w-5 sm:w-6 h-5 sm:h-6 text-white/90 mr-1 sm:mr-2" />
-                      <span className="text-2xl sm:text-3xl font-bold text-white tracking-tight">{"https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Mar%2029%2C%202026%2C%2003_15_41%20PM-mw1PByZTRii4lYrtKNcefeaMYVPMUK.png"}</span>
+                      <span className="text-2xl sm:text-3xl font-bold text-white tracking-tight">{"99"}</span>
                     </div>
                     <p className="text-white/90 text-sm sm:text-base font-bold mb-1 sm:mb-2">Entry Pass</p>
                     <p className="text-white/70 text-xs sm:text-sm">Early Bird Price - Limited Time Offer</p>
