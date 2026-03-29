@@ -216,7 +216,7 @@ export default function TeluguNightLanding() {
                     onPause={() => setIsVideoPlaying(false)}
                     onEnded={() => setIsVideoPlaying(false)}
                   >
-                    <source src="/images/whatsapp-20video-202025-09-08-20at-2016.mp4" type="video/mp4" />
+                    <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TD%28Your%20Story%29-T8696YFwHLoUHIHSAE0LEPTkjSReFQ.jpg" type="video/mp4" />
                   </video>
                   <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40"></div>
                 </div>
@@ -225,7 +225,7 @@ export default function TeluguNightLanding() {
                 <div className="relative z-10 h-full flex flex-col items-center justify-center p-8 sm:p-10 md:p-12 lg:p-16 xl:p-20">
                   <div className="mb-4 sm:mb-6 md:mb-8 lg:mb-10 mt-16 sm:mt-20 md:mt-24 lg:mt-32">
                     <img
-                      src="/images/tollywood-dhamaka-poster.png"
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Mar%2029%2C%202026%2C%2007_20_23%20PM-G02mJF3xnjdO7ErB1aWfIo9bYP01AD.png"
                       alt="Tollywood Dhamaka - April 05, 7PM Onwards at The Highpoint Lounge, Manipal"
                       className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl my-0 mx-0 py-0 justify-end"
                       style={{
