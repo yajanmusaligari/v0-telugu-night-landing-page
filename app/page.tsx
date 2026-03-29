@@ -230,24 +230,27 @@ export default function TeluguNightLanding() {
                       className="w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30 pointer-events-none"></div>
+                    
+                    {/* Book Now Widget - Centered */}
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <a
+                        href="https://telugunight.manipal.app/book"
+                        className="group relative px-8 sm:px-10 md:px-12 py-4 sm:py-5 md:py-6 bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 hover:from-orange-600 hover:via-red-600 hover:to-pink-600 text-white font-bold text-base sm:text-lg md:text-xl rounded-xl transition-all duration-300 transform hover:scale-110 active:scale-95 shadow-2xl hover:shadow-orange-500/50 touch-manipulation font-[family-name:var(--font-poppins)] border-2 border-white/30"
+                        style={{
+                          backgroundSize: "200% 200%",
+                          animation: "gradient-shift 3s ease infinite",
+                        }}
+                      >
+                        <span className="relative z-10 flex items-center gap-2 sm:gap-3">
+                          <span>BOOK NOW</span>
+                          <svg className="w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                          </svg>
+                        </span>
+                        <div className="absolute inset-0 rounded-xl bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      </a>
+                    </div>
                   </div>
-                  <div className="w-8 sm:w-12 md:w-16 h-0.5 bg-white/90 mx-auto mb-2 sm:mb-3 md:mb-4"></div>
-                  <p
-                    className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white/95 font-bold tracking-tight text-center px-2 font-[family-name:var(--font-poppins)]"
-                    style={{ textShadow: "0 0 15px rgba(0, 0, 0, 0.7), 0 2px 4px rgba(0, 0, 0, 0.8)" }}
-                  >
-                    5th April • Hi-Point Lounge  
-                  </p>
-                  <a
-                    href="https://telugunight.manipal.app/book"
-                    className="inline-block mt-4 sm:mt-5 md:mt-6 px-6 sm:px-8 md:px-10 py-2.5 sm:py-3 md:py-4 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 text-white font-bold text-xs sm:text-sm md:text-base rounded-full sm:rounded-lg transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-lg hover:shadow-2xl touch-manipulation font-[family-name:var(--font-poppins)] animate-pulse"
-                    style={{
-                      backgroundSize: "200% 200%",
-                      animation: "gradient-shift 3s ease infinite",
-                    }}
-                  >
-                    Reserve Your Spot ✨
-                  </a>
                 </div>
               </div>
             </div>
