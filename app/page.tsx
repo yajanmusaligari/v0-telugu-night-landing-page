@@ -223,7 +223,7 @@ export default function TeluguNightLanding() {
 
                 {/* Title Content */}
                 <div className="relative z-10 h-full flex flex-col items-center justify-center p-8 sm:p-10 md:p-12 lg:p-16 xl:p-20">
-                  <div className="mb-4 sm:mb-6 md:mb-8 lg:mb-10 mt-16 sm:mt-20 md:mt-24 lg:mt-32">
+                  <div className="mb-4 sm:mb-6 md:mb-8 lg:mb-10 mt-16 sm:mt-20 md:mt-24 lg:mt-32 relative">
                     <img
                       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Mar%2029%2C%202026%2C%2007_20_23%20PM-HEtGplDOGpWJBMyGke6ZkAWbA4Mmo5.png"
                       alt="Tollywood Dhamaka - April 05, 7PM Onwards at The Highpoint Lounge, Manipal"
@@ -233,6 +233,7 @@ export default function TeluguNightLanding() {
                           "drop-shadow(0 0 20px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 40px rgba(0, 0, 0, 0.6)) drop-shadow(0 4px 8px rgba(0, 0, 0, 0.9))",
                       }}
                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30 pointer-events-none rounded-lg"></div>
                   </div>
                   <div className="w-8 sm:w-12 md:w-16 h-0.5 bg-white/90 mx-auto mb-2 sm:mb-3 md:mb-4"></div>
                   <p
