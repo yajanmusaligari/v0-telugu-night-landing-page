@@ -223,17 +223,13 @@ export default function TeluguNightLanding() {
 
                 {/* Title Content */}
                 <div className="relative z-10 h-full flex flex-col items-center justify-center p-8 sm:p-10 md:p-12 lg:p-16 xl:p-20">
-                  <div className="mb-4 sm:mb-6 md:mb-8 lg:mb-10 mt-16 sm:mt-20 md:mt-24 lg:mt-32 relative">
+                  <div className="absolute inset-0">
                     <img
                       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Mar%2029%2C%202026%2C%2011_56_40%20PM-yGBLXqptD5jO19XqMZVHVlC9rhFYSK.png"
                       alt="Tollywood Dhamaka - April 05, 7PM Onwards at The Highpoint Lounge, Manipal"
-                      className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl my-0 mx-0 py-0 justify-end"
-                      style={{
-                        filter:
-                          "drop-shadow(0 0 20px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 40px rgba(0, 0, 0, 0.6)) drop-shadow(0 4px 8px rgba(0, 0, 0, 0.9))",
-                      }}
+                      className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30 pointer-events-none rounded-lg"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30 pointer-events-none"></div>
                   </div>
                   <div className="w-8 sm:w-12 md:w-16 h-0.5 bg-white/90 mx-auto mb-2 sm:mb-3 md:mb-4"></div>
                   <p
