@@ -436,7 +436,7 @@ export default function TeluguNightLanding() {
                   <div className="bg-zinc-800/60 backdrop-blur-sm border border-zinc-700/80 rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 max-w-sm sm:max-w-md mx-auto">
                     <div className="flex items-center justify-center mb-2 sm:mb-3 md:mb-4">
                       <IndianRupee className="w-5 sm:w-6 h-5 sm:h-6 text-white/90 mr-1 sm:mr-2" />
-                      <span className="text-2xl sm:text-3xl font-bold text-white tracking-tight">{"99"}</span>
+                      <span className="text-2xl sm:text-3xl font-bold text-white tracking-tight">{"https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Mar%2029%2C%202026%2C%2003_15_41%20PM-mw1PByZTRii4lYrtKNcefeaMYVPMUK.png"}</span>
                     </div>
                     <p className="text-white/90 text-sm sm:text-base font-bold mb-1 sm:mb-2">Entry Pass</p>
                     <p className="text-white/70 text-xs sm:text-sm">Early Bird Price - Limited Time Offer</p>
