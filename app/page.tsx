@@ -239,7 +239,7 @@ export default function TeluguNightLanding() {
                     className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white/95 font-bold tracking-tight text-center px-2 font-[family-name:var(--font-poppins)]"
                     style={{ textShadow: "0 0 15px rgba(0, 0, 0, 0.7), 0 2px 4px rgba(0, 0, 0, 0.8)" }}
                   >
-                    25th January • Hi-Point Lounge (Formerly Soho)
+                    5th April • Hi-Point Lounge  
                   </p>
                   <a
                     href="https://telugunight.manipal.app/book"
@@ -273,7 +273,7 @@ export default function TeluguNightLanding() {
                     Date
                   </h3>
                   <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white font-bold font-[family-name:var(--font-poppins)]">
-                    25th January 2026
+                    5th April 2026
                   </p>
                 </div>
               </AnimatedSection>
@@ -297,7 +297,7 @@ export default function TeluguNightLanding() {
                     Venue
                   </h3>
                   <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white font-bold font-[family-name:var(--font-poppins)]">
-                    Hi-Point Lounge (Formerly Soho)
+                    Hi-Point Lounge 
                   </p>
                 </div>
               </AnimatedSection>
@@ -308,7 +308,7 @@ export default function TeluguNightLanding() {
               <div className="p-4 sm:p-6 md:p-8 lg:p-10 max-w-sm sm:max-w-md lg:max-w-lg mx-auto rounded-xl sm:rounded-2xl border transition-colors duration-200 bg-zinc-900/60 border-zinc-700/80 shadow-2xl backdrop-blur-sm">
                 <div className="flex items-center justify-center mb-3 sm:mb-4 md:mb-6">
                   <IndianRupee className="w-5 sm:w-6 md:w-8 h-5 sm:h-6 md:h-8 text-white/90 mr-1 sm:mr-2" />
-                  <span className="text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-tight">150</span>
+                  <span className="text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-tight">{"99"}</span>
                 </div>
                 <p className="text-white/90 text-sm sm:text-base md:text-lg font-bold mb-1 sm:mb-2 md:mb-3 text-center font-[family-name:var(--font-poppins)]">
                   Entry Pass
@@ -436,7 +436,7 @@ export default function TeluguNightLanding() {
                   <div className="bg-zinc-800/60 backdrop-blur-sm border border-zinc-700/80 rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 max-w-sm sm:max-w-md mx-auto">
                     <div className="flex items-center justify-center mb-2 sm:mb-3 md:mb-4">
                       <IndianRupee className="w-5 sm:w-6 h-5 sm:h-6 text-white/90 mr-1 sm:mr-2" />
-                      <span className="text-2xl sm:text-3xl font-bold text-white tracking-tight">150</span>
+                      <span className="text-2xl sm:text-3xl font-bold text-white tracking-tight">{"99"}</span>
                     </div>
                     <p className="text-white/90 text-sm sm:text-base font-bold mb-1 sm:mb-2">Entry Pass</p>
                     <p className="text-white/70 text-xs sm:text-sm">Early Bird Price - Limited Time Offer</p>
